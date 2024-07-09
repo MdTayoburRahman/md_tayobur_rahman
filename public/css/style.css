@@ -1,0 +1,230 @@
+/* Custom CSS*/
+body,
+html {
+    height: 100%;
+}
+
+/* site logo start */
+
+ /* Define a class for the responsive logo */
+ .sitelogo {
+    max-width: 100%; /* Ensures the image doesn't exceed its container width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+/* Optional: You can set a maximum height if needed */
+@media (max-width: 768px) {
+    .sitelogo {
+        height: 30px; /* Adjust as needed for smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .sitelogo {
+        height: 40px; /* Default height for larger screens */
+    }
+}
+/* site logo end */
+
+/* button for hero section start */
+.bn9 {
+    padding: 2px;
+    outline: 0;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#fdde5c),
+      color-stop(#f8ab5e),
+      color-stop(#f56a62),
+      color-stop(#a176c8),
+      color-stop(#759beb),
+      color-stop(#65beb3),
+      to(#70db96)
+    );
+    background: linear-gradient(
+      to right,
+      #fdde5c,
+      #f8ab5e,
+      #f56a62,
+      #a176c8,
+      #759beb,
+      #65beb3,
+      #70db96
+    );
+    border-radius: 30px;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+  .bn9 > span {
+    display: block;
+    padding: 10px 40px;
+    font-size: 17px;
+    font-weight: 500;
+    background: #ebebeb;
+    border-radius: 30px;
+  }
+  /* button for hero section end */
+
+
+.bg-gradient-primary-to-secondary {
+    background: #4285F4;
+    background: linear-gradient(135deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+.profile {
+    background-image:url("../assets/profile-back.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    position: relative;
+    height: 75vw;
+    width: 75vw;
+    margin-top: 5vw;
+    max-height: 40rem;
+    max-width: 40rem;
+}
+.profile .profile-img {
+    height: 80vw;
+    max-height: 45rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+@media (min-width: 576px) {
+    .profile {
+        height: 60vw;
+        width: 60vw;
+    }
+    .profile .profile-img {
+        height: 65vw;
+    }
+}
+@media (min-width: 768px) {
+    .profile {
+        height: 50vw;
+        width: 50vw;
+    }
+    .profile .profile-img {
+        height: 55vw;
+    }
+}
+@media (min-width: 992px) {
+    .profile {
+        height: 40vw;
+        width: 40vw;
+    }
+    .profile .profile-img {
+        height: 45vw;
+    }
+}
+@media (min-width: 1200px) {
+    .profile {
+        height: 35vw;
+        width: 35vw;
+    }
+    .profile .profile-img {
+        height: 40vw;
+    }
+}
+
+#loading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+#loading-spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top-color:#1e30f3;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* apps gallery start */
+
+.app-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.app-title {
+    max-height: calc(1.5em * 1); /* Maximum of 1 lines */
+    overflow: hidden; /* Hide overflow text */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.app-description {
+    font-size: 14px;
+    color: #666; 
+    max-height: calc(1.5em * 5); /* Maximum of 5 lines */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Ellipsis for overflow text */
+    -webkit-line-clamp: 5; /* Number of lines to show */
+    -webkit-box-orient: vertical; /* Vertical text orientation */
+    display: -webkit-box; /* Use webkit box for multiline text */
+    margin-top: 10px; /* Space at the top of the card */
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #357ae8;
+}
+
