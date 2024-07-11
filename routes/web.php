@@ -1,11 +1,20 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ResumeController;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/clear', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('optimize');
+    return 'Cache is cleared.';
+});
 
 // Page Routes
 Route::get('/', [HomeController::class, 'page']);
@@ -27,4 +36,3 @@ Route::get('/skillsData', [ResumeController::class, 'skillsData']);
 Route::get('/languageData', [ResumeController::class, 'languageData']);
 Route::post('/contactRequest', [ContactController::class, 'contactRequest']);
 Route::get('/download-pdf', [ResumeController::class, 'downloadPDF']);
-
