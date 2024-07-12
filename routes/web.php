@@ -30,6 +30,7 @@ Route::get('/socialData', [HomeController::class, 'socialData']);
 Route::get('/projectsData', [ProjectController::class, 'projectsData']);
 Route::get('/applist', [ProjectController::class, 'applist']);
 Route::get('/resumeLink', [ResumeController::class, 'resumeLink']);
+Route::get('/certifications', [ResumeController::class, 'certifications']);
 Route::get('/experiencesData', [ResumeController::class, 'experiencesData']);
 Route::get('/educationData', [ResumeController::class, 'educationData']);
 Route::get('/skillsData', [ResumeController::class, 'skillsData']);

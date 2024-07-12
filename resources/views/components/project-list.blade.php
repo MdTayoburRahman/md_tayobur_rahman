@@ -6,8 +6,6 @@
         <div class="row gx-5 justify-content-center">
             <div id="project-list" class="col-lg-11 col-xl-9 col-xxl-8">
 
-
-
             </div>
         </div>
     </div>
@@ -15,8 +13,8 @@
 
 <script>
     GetProjectList();
-    async function GetProjectList(){
-        let URL="/projectsData"
+    async function GetProjectList() {
+        let URL = "/projectsData"
 
         try {
             // Loader Show Content Hide
@@ -28,9 +26,9 @@
             document.getElementById('loading-div').classList.add('d-none');
             document.getElementById('content-div').classList.remove('d-none');
 
-            response.data.forEach((item)=>{
+            response.data.forEach((item) => {
 
-                document.getElementById('project-list').innerHTML+=(`<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                document.getElementById('project-list').innerHTML += (`<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">

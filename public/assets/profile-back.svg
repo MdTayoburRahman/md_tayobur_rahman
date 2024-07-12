@@ -4,17 +4,17 @@
 	 viewBox="0 0 466.9 434" style="enable-background:new 0 0 466.9 434;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#Rectangle_1880_00000093894672660842659230000007792356697719991712_);}
-	.st1{fill:#5172AA;}
-	.st2{fill:#FFFFFF;}
-	.st3{fill:#377E5C;}
+	.st1{fill:#055eee;}
+	.st2{fill:#055eee;}
+	.st3{fill:#055eee;}
 </style>
 <g id="Group_1464" transform="translate(-1858.257 67)">
 	
 		<linearGradient id="Rectangle_1880_00000144306784437945866560000011110475834447202724_" gradientUnits="userSpaceOnUse" x1="1553.0173" y1="690.2223" x2="1553.9413" y2="689.2993" gradientTransform="matrix(422 0 0 -434 -653477.4375 299505)">
-		<stop  offset="0" style="stop-color:#EA4335"/>
-		<stop  offset="0.3512" style="stop-color:#4285F4"/>
-		<stop  offset="0.6864" style="stop-color:#FBBC04"/>
-		<stop  offset="1" style="stop-color:#0F9D58"/>
+		<stop  offset="0" style="stop-color:#055eee"/>
+		<stop  offset="0.3512" style="stop-color:#055eee"/>
+		<stop  offset="0.6864" style="stop-color:#055eee"/>
+		<stop  offset="1" style="stop-color:#055eee"/>
 	</linearGradient>
 	<path id="Rectangle_1880" style="fill:url(#Rectangle_1880_00000144306784437945866560000011110475834447202724_);" d="M1927-67
 		h330c25.4,0,46,20.6,46,46v342c0,25.4-20.6,46-46,46h-330c-25.4,0-46-20.6-46-46V-21C1881-46.4,1901.6-67,1927-67z"/>

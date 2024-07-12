@@ -6,8 +6,8 @@ html {
 
 /* site logo start */
 
- /* Define a class for the responsive logo */
- .sitelogo {
+/* Define a class for the responsive logo */
+.sitelogo {
     max-width: 100%; /* Ensures the image doesn't exceed its container width */
     height: auto; /* Maintains the aspect ratio */
 }
@@ -33,51 +33,51 @@ html {
     font-size: 17px;
     color: rgb(0, 0, 0);
     background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#fdde5c),
-      color-stop(#f8ab5e),
-      color-stop(#f56a62),
-      color-stop(#a176c8),
-      color-stop(#759beb),
-      color-stop(#65beb3),
-      to(#70db96)
+        linear,
+        left top,
+        right top,
+        from(#fdde5c),
+        color-stop(#f8ab5e),
+        color-stop(#f56a62),
+        color-stop(#a176c8),
+        color-stop(#759beb),
+        color-stop(#65beb3),
+        to(#70db96)
     );
     background: linear-gradient(
-      to right,
-      #fdde5c,
-      #f8ab5e,
-      #f56a62,
-      #a176c8,
-      #759beb,
-      #65beb3,
-      #70db96
+        to right,
+        #fdde5c,
+        #f8ab5e,
+        #f56a62,
+        #a176c8,
+        #759beb,
+        #65beb3,
+        #70db96
     );
     border-radius: 30px;
     border: 0;
     box-shadow: none;
     cursor: pointer;
-  }
-  
-  .bn9 > span {
+}
+
+.bn9 > span {
     display: block;
     padding: 10px 40px;
     font-size: 17px;
     font-weight: 500;
     background: #ebebeb;
     border-radius: 30px;
-  }
-  /* button for hero section end */
-
+}
+/* button for hero section end */
 
 .bg-gradient-primary-to-secondary {
-    background: #4285F4;
-    background: linear-gradient(135deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);
+    /* background: linear-gradient(135deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);*/
+    background: #055eee;
 }
 
 .text-gradient {
-    background: -webkit-linear-gradient(315deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);
+    background: #055eee;
+    /* background: -webkit-linear-gradient(315deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #0F9D58 100%);*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -94,7 +94,7 @@ html {
     font-size: 1.5rem;
 }
 .profile {
-    background-image:url("../assets/profile-back.svg");
+    background-image: url("../assets/profile-back.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -113,9 +113,6 @@ html {
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-
 
 @media (min-width: 576px) {
     .profile {
@@ -154,7 +151,7 @@ html {
     }
 }
 
-#loading-div{
+#loading-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,13 +166,17 @@ html {
     position: relative;
     border: 3px solid #f3f3f3;
     border-radius: 50%;
-    border-top-color:#1e30f3;
+    border-top-color: #1e30f3;
     animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* apps gallery start */
@@ -204,7 +205,7 @@ html {
 
 .app-description {
     font-size: 14px;
-    color: #666; 
+    color: #666;
     max-height: calc(1.5em * 5); /* Maximum of 5 lines */
     overflow: hidden; /* Hide overflow text */
     text-overflow: ellipsis; /* Ellipsis for overflow text */
@@ -227,4 +228,3 @@ html {
 .download-button:hover {
     background-color: #357ae8;
 }
-

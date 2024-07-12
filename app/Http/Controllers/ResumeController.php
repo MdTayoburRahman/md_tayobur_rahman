@@ -39,6 +39,10 @@ class ResumeController extends Controller
         return DB::table('languages')->get();
     }
 
+    function certifications(Request $request) {
+        return DB::table('certifications')->get();
+    }
+
     public function downloadPDF()
     {
         $filePath = public_path('assets/profile.pdf'); // Path to your PDF file

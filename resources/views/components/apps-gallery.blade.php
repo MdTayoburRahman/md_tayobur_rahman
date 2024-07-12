@@ -7,7 +7,8 @@
 </section> --}}
 
 <div class="text-center mb-2">
-    <h1 class="display-5 fw-bolder mb-5 mt-5"><span class="text-gradient d-inline">Projects</span></h1>
+    <h1 class="display-5 fw-bolder mt-5"><span class="text-gradient d-inline">Projects</span></h1>
+    <h3><span class="d-inline">Some of My Creation</span></h3>
 </div>
 <div class="container" id="app_gallery_container">
 
@@ -45,7 +46,8 @@
                 <img src="${item['image_link']}" alt="${item['title']}" style="height: 100px; width:100px">
                 <div class="app-title">${item['title']}</div>
                 <div class="app-description">${item['description']}</div>
-                <a href="${item['app_link']}" target="_blank" class="download-button">Download</a>
+                <a href="${item['app_link']}" tabIndex="0"><img class="bn45 m-5" style=" width:130px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="bn45"/></a>
+
             </div>
         </div>
     `)

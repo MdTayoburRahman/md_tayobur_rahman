@@ -16,7 +16,6 @@
 </div>
 
 <script>
-    eduList();
     async function eduList() {
 
         try {
@@ -48,4 +47,6 @@
         }
 
     }
+
+    eduList();
 </script>

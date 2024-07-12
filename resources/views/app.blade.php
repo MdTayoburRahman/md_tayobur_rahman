@@ -19,7 +19,6 @@
         rel="stylesheet" />
     @yield('link')
     @yield('style')
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
     <script src="{{ asset('js/axios.min.js') }}"></script>

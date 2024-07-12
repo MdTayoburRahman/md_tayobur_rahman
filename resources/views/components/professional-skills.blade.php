@@ -3,9 +3,8 @@
         <div class="col-lg-11 col-xl-9 col-xxl-8">
             <section>
                 <h2 class="text-secondary fw-bolder mb-4">Professional Skills</h2>
-                <div class="card-body p-5">
+                <div class="card-body">
                     <div id="skills-list" class="row row-cols-1 row-cols-md-3 mb-4">
-
 
                     </div>
                 </div>

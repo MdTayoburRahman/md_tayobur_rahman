@@ -7,5 +7,5 @@
 @section('content')
     {{-- @include('components.project-list') --}}
     @include('components.apps-gallery')
-    @include('components.call-action')
+    {{-- @include('components.call-action') --}}
 @endsection
