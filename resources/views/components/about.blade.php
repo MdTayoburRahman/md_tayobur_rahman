@@ -55,8 +55,6 @@
         try {
             let URL = "/socialData"
             let response = await axios.get(URL);
-
-            debugger;
             document.getElementById('loading-div').classList.add('d-none');
             document.getElementById('content-div').classList.remove('d-none');
 
