@@ -48,12 +48,12 @@
             response.data.forEach((item) => {
                 document.getElementById('experience-list').innerHTML += (` <div class="row align-items-center gx-5">
                                 <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                     <div class="ms-3">
+                                     <div class="ms-3 m-2">
                                     <a href="${item['company_website']}" target="_blank">
                                         <img src="${item['company_image']}" alt="Media Thumbnail" class="img-thumbnail" style="width: 150px;">
                                     </a>
                                 </div>
-                                    <div class="bg-light p-4 rounded-4">
+                                    <div class="p-4 rounded-4">
                                         <div class="text-primary fw-bolder mb-2">${item['duration']}</div>
                                         <div class="small fw-bolder">
                                             <a href="${item['company_website']}" target="_blank">${item['company_website']}</a></div>

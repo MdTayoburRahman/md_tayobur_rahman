@@ -27,24 +27,25 @@
                 response.data.forEach((item) => {
                     document.getElementById('certifications-list').innerHTML += `
                     <div class="col align-items-center gx-5 mt-1">
-                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                            <div class="bg-light p-4 rounded-4 d-flex justify-content-between">
-                                <div class="mb-5">
-                                   <div class="ms-3">
+                        <div class="col text-center text-lg-start m-3 mb-lg-0">
+                            
+                                <div >
+                                   <div class="ms-3 p-2">
                                     <a href="${item['media_url']}" target="_blank">
                                         <img src="${item['media_url']}" alt="Media Thumbnail" class="img-thumbnail" style="width: 250px;">
                                     </a>
-                                </div>
+                                    </div>
                             
                                     <div class="small fw-bolder">${item['title']}</div>
                                     <div class="small text-muted">Institute: ${item['organization']}</div>
                                     <div class="small text-muted">Credential Id: ${item['credential_id']}</div>
                                      <div class="text-primary mb-2">Issue Date: ${item['issue_date']}</div>
-                                    <div class="small text-muted">
-                                        <a href="${item['credential_url']}" target="_blank">${item['credential_url']}</a>
+                                
+                                      <div class="ms-3 p-2">
+                                        <a class="btn btn-outline-primary" href="${item['credential_url']}" target="_blank">View Certificate</a>
                                     </div>
                                 </div>
-                            </div>
+                           
                         </div>
                     </div>`;
                 });
