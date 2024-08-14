@@ -14,6 +14,7 @@
     <meta name="og:title" content="{{ $seo->ogTitle }}" />
     <meta name="og:image" content="{{ $seo->ogImage }}" />
     <meta name="og:description" content="{{ $seo->ogDescription }}" />
+    
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <link href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css') }}"

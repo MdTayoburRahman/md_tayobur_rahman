@@ -42,7 +42,8 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <a class="justify-items-center" aria-label="Chat on WhatsApp"
-                            href="https://wa.me/01717932348?text=I%20am%20interested%20to%20talk%20about%20an%20app%20development">
+                            href="https://wa.me/01717932348?text=I%20am%20interested%20to%20talk%20about%20an%20app%20development"
+                            target="_blank">
                             <img alt="Chat on WhatsApp" src="{{ asset('assets/WhatsAppButtonGreenLarge.svg') }}" />
                         </a>
                     </div>
