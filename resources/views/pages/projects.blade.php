@@ -5,6 +5,19 @@
 @endsection
 
 @section('content')
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_2.jpg') }});">
+        <div class="container position-relative">
+            <h1>Project</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Home /</a></li>
+                    <li class="current"> project</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
     {{-- @include('components.project-list') --}}
     @include('components.apps-gallery')
     {{-- @include('components.call-action') --}}

@@ -1,5 +1,4 @@
 @extends('app')
-
 @section('link')
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 @endsection
@@ -8,18 +7,16 @@
     <!-- Page Title -->
     <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_2.jpg') }});">
         <div class="container position-relative">
-            <h1>Services</h1>
+            <h1>About Me</h1>
             <nav class="breadcrumbs">
                 <ol>
                     <li><a href="/">Home /</a></li>
-                    <li class="current"> service</li>
+                    <li class="current"> About</li>
                 </ol>
             </nav>
         </div>
     </div>
 
-
-    {{-- @include('components.project-list') --}}
-    @include('components.service')
-    {{-- @include('components.call-action') --}}
+    
+    @include('components.about')
 @endsection

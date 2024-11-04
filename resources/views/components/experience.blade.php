@@ -3,21 +3,6 @@
     <div class="row gx-5 justify-content-center">
 
         <div class="col-lg-11 col-xl-9 col-xxl-8">
-            <div class="text-center mb-5">
-                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-
-                <p>Hi, I'm an experienced software developer proficient in Java, Android Studio,
-                    Laravel,
-                    PHP, JavaScript, HTML, CSS, Bootstrap, and MySQL. Throughout my career, I have leveraged these
-                    skills to
-                    design, develop, and deploy various robust and user-friendly applications. My strong problem-solving
-                    skills,
-                    coupled with a passion for continuous learning, enable me to adapt to new trends and technologies
-                    effectively. Whether working independently or as part of a team, I bring strong communication
-                    skills,
-                    attention to detail, and a focus on delivering high-quality products that enhance user experience.
-                </p>
-            </div>
 
             <!-- Experience Section-->
             <section>

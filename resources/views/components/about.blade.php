@@ -3,7 +3,6 @@
         <div class="row gx-5 justify-content-center">
             <div class="col-xxl-8">
                 <div class="text-center my-5">
-                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
                     <p id="about-title" class="lead fw-light mb-1"></p>
 
                     <div class="d-flex justify-content-center fs-2 gap-3">

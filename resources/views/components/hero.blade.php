@@ -17,7 +17,7 @@
             <div class="col-xxl-7">
                 <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                     <div class="profile">
-                        <img class="profile-img" id="profileImg" src="assets/profile.png" alt="..." />
+                        <img class="profile-img" id="profileImg" src="{{ asset('assets/profile.png') }}" alt="..." />
                     </div>
                 </div>
             </div>

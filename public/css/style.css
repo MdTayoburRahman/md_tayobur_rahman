@@ -267,3 +267,136 @@ body {
     }
 }
 /* admin panel css end  */
+
+/* brand section start */
+/* .brand-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+  } */
+
+.brand-section h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.brand-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-item img {
+    max-height: 150px;
+    width: 150px;
+}
+
+/* brand section end */
+.custom-img {
+    max-height: 100px;
+    width: auto;
+}
+
+/* Custom styling for service page start */
+.section-header h2 {
+    color: #055eee;
+}
+.section-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.service-item {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.service-item .icon {
+    font-size: 3rem;
+    color: #055eee;
+}
+.service-item .card-title {
+    color: #055eee;
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #055eee;
+    border-color: #055eee;
+}
+.btn-primary:hover {
+    background-color: #004bb5;
+    border-color: #004bb5;
+}
+
+/* Custom styling for service page end */
+
+/* style for all page header start */
+.page-title {
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.page-title .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.breadcrumbs {
+    margin-top: 10px;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumbs ol li {
+    font-size: 16px;
+}
+
+.breadcrumbs ol li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumbs ol li a:hover {
+    color: #055eee; /* Highlight color */
+}
+
+.breadcrumbs ol .current {
+    color: #ffffff;
+}
+
+.dark-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+/*style for all page header end */

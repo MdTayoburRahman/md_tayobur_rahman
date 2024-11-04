@@ -5,5 +5,7 @@
 
 @section('content')
     @include('components.hero')
+    @include('components.work_with')
+    @include('components.my_profession')
     @include('components.about')
 @endsection
