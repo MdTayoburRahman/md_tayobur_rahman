@@ -15,9 +15,10 @@
             </a>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-            <a href="https://alhpg.com" target="_blank" class="text-decoration-none">
+            <a href="https://wasel.store" target="_blank" class="text-decoration-none">
                 <div class="brand-item">
-                    <img src="https://www.protectc-mgh.com/assets/img/slide/MGH.png" alt="Group MGH" class="img-fluid">
+                    <img src="https://wasel.store/static/media/logo.373230b6afd5b5d34919.png" alt="Wasel"
+                        class="img-fluid">
                 </div>
             </a>
         </div>
