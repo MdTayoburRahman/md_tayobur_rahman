@@ -29,5 +29,13 @@
                 </div>
             </a>
         </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+            <a href="https://alponacm.com" target="_blank" class="text-decoration-none">
+                <div class="brand-item">
+                    <img src="https://alponacm.com/assets/images/logo/alpona_logo.png" alt="Alpona" class="img-fluid">
+                </div>
+            </a>
+        </div>
     </div>
 </div>
