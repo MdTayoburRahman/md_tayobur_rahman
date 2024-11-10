@@ -19,6 +19,7 @@
     </div>
 
     {{-- @include('components.project-list') --}}
+    @include('components.webprojects')
     @include('components.apps-gallery')
     {{-- @include('components.call-action') --}}
 @endsection

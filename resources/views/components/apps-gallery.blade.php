@@ -5,21 +5,25 @@
         </div>
     </div>
 </section> --}}
+<section>
 
-<div class="text-center mb-2">
-    <h1 class="display-5 fw-bolder mt-5"><span class="text-gradient d-inline">Projects</span></h1>
-    <h3><span class="d-inline">Some of My Creation</span></h3>
-</div>
-<div class="container" id="app_gallery_container">
+    <div class="text-center mb-2">
+            <h3><span class="d-inline">Some of My App Creation</span></h3>
+    </div>
+    <div class="container" id="app_gallery_container">
 
-    <div class="row" id="appitemdiv">
+        <div class="row" id="appitemdiv">
+        </div>
+
+        <div class="mt-5 mb-5 justify-items-center text-center">
+            <a href="https://play.google.com/store/apps/dev?id=8885326976735726594&hl=en"><button
+                    class="bn9"><span>More
+                        Apps On Google Play Store</span></button></a>
+        </div>
     </div>
 
-    <div class="mt-5 mb-5 justify-items-center text-center">
-        <a href="https://play.google.com/store/apps/dev?id=8885326976735726594&hl=en"><button class="bn9"><span>More
-                    Apps On Google Play Store</span></button></a>
-    </div>
-</div>
+</section>
+
 
 
 

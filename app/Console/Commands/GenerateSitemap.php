@@ -14,7 +14,7 @@ class GenerateSitemap extends Command
      * @var string
      */
     protected $signature = 'generate:sitemap';
-   
+
     /**
      * The console command description.
      *
@@ -32,17 +32,21 @@ class GenerateSitemap extends Command
 
     public function handle()
     {
-        // Create a new Sitemap instance
+        // Get the site URL from environment or config
+        $siteUrl = "https://mdtayoburrahman.com";  // Default to localhost if not defined in .env
+
+        // Create a new sitemap
         $sitemap = Sitemap::create();
 
-        // Add your routes
-        $sitemap->add(Url::create('/')->setPriority(1.0)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY));
-        $sitemap->add(Url::create('/contact')->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
-        $sitemap->add(Url::create('/projects')->setPriority(0.9)->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY));
-        $sitemap->add(Url::create('/resume')->setPriority(0.7)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
-        $sitemap->add(Url::create('/service')->setPriority(0.6)->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY));
-        $sitemap->add(Url::create('/about')->setPriority(0.5)->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY));
-        
+        // Add URLs to the sitemap
+        $sitemap
+            ->add(Url::create($siteUrl . '/'))
+            ->add(Url::create($siteUrl . '/contact'))
+            ->add(Url::create($siteUrl . '/projects'))
+            ->add(Url::create($siteUrl . '/resume'))
+            ->add(Url::create($siteUrl . '/service'))
+            ->add(Url::create($siteUrl . '/about'));
+
         // Route::get('/', [HomeController::class, 'page']);
         // Route::get('/contact', [ContactController::class, 'page']);
         // Route::get('/projects', [ProjectController::class, 'page']);

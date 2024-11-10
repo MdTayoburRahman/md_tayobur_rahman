@@ -1,2 +1,8 @@
+# robots.txt for https://mdtayoburrahman.com/
+
+# Allow all crawlers access to everything
 User-agent: *
-Disallow: /
+Disallow: 
+
+# Sitemap location
+Sitemap: https://mdtayoburrahman.com/sitemap.xml

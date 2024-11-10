@@ -20,6 +20,11 @@ Route::get('/cache', function () {
     return 'Cache is cleared.';
 });
 
+Route::get('/make_sitemap', function () {
+    Artisan::call('generate:sitemap');
+    return'Sitemap generated successfully!';
+});
+
 // Page Routes
 Route::get('/', [HomeController::class, 'page']);
 Route::get('/contact', [ContactController::class, 'page']);
