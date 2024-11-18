@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+
     <title>{{ $seo->title }}</title>
     <meta name="google-site-verification" content="EpT2NHy1CLHBQexIJPh6TtnH-QtZWvI7LljDrQmWs84" />
     <meta name="description" content="{{ $seo->description }}" />
@@ -28,10 +30,7 @@
     <meta name="twitter:description" content="{{ $seo->description }}">
     <meta name="twitter:image" content="{{ asset($seo->ogImage) }}">
 
-
-
-
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/profile.png') }}" />
     <link href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css') }}"
         rel="stylesheet" />
     @yield('link')

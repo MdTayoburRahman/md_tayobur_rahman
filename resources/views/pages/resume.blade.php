@@ -8,7 +8,7 @@
 @endsection
 @section('content')
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_2.jpg') }});">
+    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_3.webp') }});">
         <div class="container position-relative">
             <h1>Resume</h1>
             <nav class="breadcrumbs">
@@ -26,11 +26,13 @@
     @include('components.certifications')
     @include('components.professional-skills')
     {{-- @include('components.education') --}}
+    {{-- @include('components.languages') --}}
+    @include('components.contact_v2')
 
-    @include('components.languages')
+   
 @endsection
 
 
 @section('script')
-{{-- here all script --}}
+    {{-- here all script --}}
 @endsection

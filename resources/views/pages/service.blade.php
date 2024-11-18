@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_2.jpg') }});">
+    <div class="page-title dark-background" style="background-image: url({{ asset('assets/img/page_header_3.webp') }});">
         <div class="container position-relative">
             <h1>Services</h1>
             <nav class="breadcrumbs">

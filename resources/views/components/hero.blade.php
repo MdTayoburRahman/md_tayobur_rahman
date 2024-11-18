@@ -1,87 +1,100 @@
+<!-- Hero Section -->
+<!-- Hero Section -->
+<header class="hero-section py-5 position-relative">
+    <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-xxl-6 order-1 order-xxl-1 mb-5 mb-xxl-0">
+                <div class="d-flex justify-content-center">
+                    <img class="profile-img" id="profileImg" src="{{ asset('assets/profile.png') }}" alt="Profile Image" />
+                </div>
+            </div>
+            <div class="col-xxl-6 order-2 order-xxl-2">
+                <div class="text-center text-xxl-start">
+                    <div class="badge bg-primary text-white mb-4 shadow-sm">
+                        <div class="text-uppercase fw-semibold" id="keyLine">Design &middot; Development &middot;
+                            Marketing</div>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4">
+                        <span class="text-gradient d-inline" id="title">Get online and grow fast</span>
+                    </h1>
+                    <p class="fs-4 fw-light text-muted mb-5" id="short_title">I can help your business to succeed in the
+                        digital world</p>
+                    <div
+                        class="d-flex flex-column flex-sm-row justify-content-center justify-content-xxl-start gap-3 mb-5">
+                        <a class="btn btn-primary btn-lg shadow-sm" href="/resume" role="button"><i
+                                class="bi bi-file-earmark-break-fill"></i> Resume</a>
+                        <a class="btn btn-outline-secondary btn-lg shadow-sm" href="/projects" role="button"><i
+                                class="bi bi-card-checklist"></i> Projects</a>
+                    </div>
+                    <div class="certifications mt-5">
+                        <h5 class="text-center text-xxl-start mb-3">Certified By</h5>
+                        <div class="d-flex justify-content-center justify-content-xxl-start gap-4 mt-2">
+                            <a href="https://www.udemy.com" target="_blank">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCtPP-yWBXjy_E4YituEoMt1GCNYgx_rkkg&s"
+                                    class="certification-img" alt="Udemy Logo">
+                            </a>
+                            <a href="https://ostad.app/" target="_blank">
+                                <img src="https://cdn.ostad.app/public/upload/2024-03-20T04-26-32.799Z-ostad_logo_light@512x%20(2).png"
+                                    class="certification-img" alt="Ostad logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <style>
-    .custom-img {
-        max-width: 100%;
+    .hero-section {
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        overflow: hidden;
+    }
+
+    .text-gradient {
+        background: linear-gradient(90deg, #007bff, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .profile-img {
+        width: auto;
+        height: 460px;
+
+    }
+
+    .certification-img {
+        width: 150px;
         height: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: transparent;
+        mix-blend-mode: multiply;
+    }
+
+
+    .certification-img:hover {
+        transform: scale(1.2);
+    }
+
+    .badge {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
     }
 
     @media (max-width: 768px) {
-        .custom-img {
-            width: 100%;
+        .profile-img {
+            width: auto;
+            height: 250px;
         }
     }
 </style>
 
-<header class="py-5">
-    <div class="container px-5 pb-5">
-        <div class="row gx-5 align-items-center">
-            <div class="col-xxl-7">
-                <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                    <div class="profile">
-                        <img class="profile-img" id="profileImg" src="{{ asset('assets/profile.png') }}" alt="..." />
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-5">
-                <div class="text-center text-xxl-start">
-                    <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                        <div class="text-uppercase" id="keyLine">Design &middot; Development &middot; Marketing</div>
-                    </div>
-                    <div class="fs-3 fw-light text-muted" id="short_title">I can help your business to</div>
-                    <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline" id="title">Get online
-                            and grow fast</span></h1>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-center mb-3">
-
-                        <a class="btn btn-primary text-center" href="/resume" role="button"><i
-                                class="bi bi-file-earmark-break-fill"></i>
-                            Resume</a>
-
-                        <a class="btn btn-secondary text-center" href="/projects" role="button"><i
-                                class="bi bi-card-checklist"></i>
-                            Projects</a>
-
-
-                    </div>
-
-                    {{-- Certified By --}}
-                    <div class="container mt-2">
-                        <h4 class="text-center">Certified By</h4>
-                        <hr>
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-4 d-flex justify-content-center mb-3">
-                                <a href="https://www.udemy.com" target="_blank">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCtPP-yWBXjy_E4YituEoMt1GCNYgx_rkkg&s"
-                                        class="custom-img" alt="Udemy Logo">
-                                </a>
-                            </div>
-                            <div class="col-6 col-md-4 d-flex justify-content-center mb-3">
-                                <a href="https://ostad.app/" target="_blank">
-                                    <img src="https://cdn.ostad.app/public/upload/2024-03-20T04-26-32.799Z-ostad_logo_light@512x%20(2).png"
-                                        class="custom-img" alt="Ostad logo">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-
-    </div>
-</header>
-
 <script>
-    getHero();
+    document.addEventListener('DOMContentLoaded', getHero);
+
     async function getHero() {
-
         try {
-            let URL = "/heroData"
-
-            document.getElementById('loading-div').classList.remove('d-none');
-            document.getElementById('content-div').classList.add('d-none');
-
+            let URL = "/heroData";
             let response = await axios.get(URL);
             document.getElementById('keyLine').innerHTML = response.data['keyLine'];
             document.getElementById('short_title').innerHTML = response.data['short_title'];
@@ -90,6 +103,5 @@
         } catch (e) {
             alert(e);
         }
-
     }
 </script>

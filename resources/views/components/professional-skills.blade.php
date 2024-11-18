@@ -1,4 +1,3 @@
-
 <section class="py-5">
     <div class="container-fluid px-4 px-md-5 my-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -125,7 +124,7 @@
 
 <style>
     .skill-badge {
-        width: 100px;
+        width: 70px;
         /* Set a fixed width for consistent sizing */
         height: auto;
         /* Maintain aspect ratio */

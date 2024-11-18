@@ -1,11 +1,10 @@
 <!-- Experience Section -->
-<section class="experience-section py-5">
+<section class="py-5">
     <div class="container-fluid px-4 px-md-5 my-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-9">
-                <div class="text-center mb-5">
-                    <h2 class="text-primary fw-bold">Professional Journey</h2>
-                    <p class="text-muted">Discover my experiences and the milestones I've achieved along the way</p>
+            <div class="col-12 col-md-11 col-lg-10 col-xl-9 col-xxl-8">
+                <div class="text-center mb-4">
+                    <h2 class="text-secondary fw-bolder">Working Experience</h2>
                 </div>
 
                 <div id="experience-list" class="row g-4">
@@ -19,59 +18,56 @@
 <style>
     .experience-item {
         height: auto;
+        /* Set a fixed height for uniformity */
         display: flex;
         flex-direction: column;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        border-radius: 15px;
-        overflow: hidden;
+        justify-content: space-between;
+        /* Distribute space evenly */
+        transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .experience-item:hover {
-        transform: translateY(-10px) scale(1.02);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .experience-item h5 {
-        color: #1e73be;
-        font-size: 1.25rem;
+        color: #007bff;
+        /* Primary color */
     }
 
     .experience-item img {
-        width: 90px;
-        height: 90px;
-        border-radius: 0;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        width: 100px;
+        /* Medium size for images */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+        /* Rounded corners for images */
     }
 
     .experience-duration {
-        font-weight: 600;
-        color: #495057;
+        font-weight: bold;
+        color: #6c757d;
+        /* Secondary text color */
     }
 
     .experience-details {
-        color: #5a5a5a;
-        line-height: 1.6;
+        font-style: italic;
+        color: #343a40;
+        /* Dark text color */
     }
 
     .card-body {
-        padding: 1.5rem;
-        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        border-radius: 10px;
-    }
-
-    .card {
-        border: none;
-    }
-
-    .img-square {
-        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        /* Ensure content stacks vertically */
+        justify-content: space-between;
+        /* Distribute space */
     }
 </style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        getExpList();
-    });
+    getExpList();
 
     async function getExpList() {
         try {
@@ -90,15 +86,15 @@
 
     function createExperienceItem(item) {
         const container = document.createElement('div');
-        container.className = 'experience-item col-12 col-md-6 col-lg-4';
+        container.className = 'experience-item col-12 col-md-6 col-lg-4'; // Responsive layout
 
         container.innerHTML = `
-            <div class="card shadow-sm h-100">
+            <div class="card bg-light shadow-sm rounded h-100">
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <div class="me-3">
                             <a href="${item.company_website}" target="_blank">
-                                <img src="${item.company_image}" alt="${item.company_name} logo" class="img-thumbnail img-square">
+                                <img src="${item.company_image}" alt="${item.company_name} logo" class="img-thumbnail">
                             </a>
                         </div>
                         <div>
