@@ -10,6 +10,7 @@
                 <li class="nav-item"><a class="nav-link" href="{{ url('/resume') }}">Resume</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/projects') }}">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/service') }}">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url('/blog') }}">Blogs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
 

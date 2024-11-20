@@ -63,7 +63,7 @@
     }
 
     .certification-img {
-        width: 150px;
+        width: 100px;
         height: auto;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         background: transparent;

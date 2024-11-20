@@ -1,0 +1,29 @@
+/* aside start */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-grow-1 {
+    margin-left: 250px; /* Adjust to match the aside menu width */
+    padding-top: 1rem;
+}
+
+aside ul.nav {
+    margin-top: 20px;
+}
+
+aside ul.nav li a {
+    color: #007bff;
+    font-weight: 500;
+}
+
+aside ul.nav li a:hover {
+    text-decoration: underline;
+}
+/* aside end */
