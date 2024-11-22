@@ -28,8 +28,6 @@
     {{-- @include('components.education') --}}
     {{-- @include('components.languages') --}}
     @include('components.contact_v2')
-
-   
 @endsection
 
 

@@ -20,8 +20,8 @@
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
             <a href="https://wasel.store" target="_blank" class="text-decoration-none" aria-label="Visit Wasel website">
                 <div class="brand-item">
-                    <img src="https://wasel.store/static/media/logo.373230b6afd5b5d34919.png" alt="Wasel logo"
-                        class="certification-img" loading="lazy">
+                    <img src="{{ asset('assets/img/wasel_vi.jpg') }}" alt="Wasel logo" class="certification-img"
+                        loading="lazy">
                 </div>
             </a>
         </div>

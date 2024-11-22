@@ -13,7 +13,10 @@ class BlogsController extends Controller
     function page()
     {
         $seo = DB::table('seoproperties')->where('pageName', '=', 'blog')->first();
-        $blogPosts = BlogPost::paginate(6);  // Retrieves 6 blog posts per page
+        // $blogPosts = BlogPost::paginate(6);  // Retrieves 6 blog posts per page
+
+        // Retrieve the latest 6 blog posts, ordered by created_at in descending order
+        $blogPosts = BlogPost::orderBy('created_at', 'desc')->paginate(6);
         return view('pages.blogs', ['seo' => $seo, 'blogPosts' => $blogPosts]);
     }
 
@@ -37,7 +40,6 @@ class BlogsController extends Controller
             'ogDescription' => $post->content,
             'ogImage' => asset('assets/img/post_thumbnail/' . $post->thumbnail)
         ];
-        
 
         // Pass data to the view using compact
         return view('pages.viewblog', ['post' => $post, 'seo' => $seo]);

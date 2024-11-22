@@ -15,7 +15,9 @@ class BlogPostController extends Controller
     public function index()
     {
         // Fetch all blog posts to pass to the dashboard view
-        $blogPosts = BlogPost::all();
+        //  $blogPosts = BlogPost::all();
+        // Retrieve the latest 6 blog posts, ordered by created_at in descending order
+        $blogPosts = BlogPost::orderBy('created_at', 'desc')->all();
         return view('admin.page.dashboard', compact('blogPosts'));
     }
 

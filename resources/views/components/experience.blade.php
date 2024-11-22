@@ -1,51 +1,62 @@
 <!-- Experience Section -->
-<section class="experience-section py-5">
-    <div class="container-fluid px-4 px-md-5 my-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-9">
-                <div class="text-center mb-5">
-                    <h2 class="text-primary fw-bold">Professional Journey</h2>
-                    <p class="text-muted">Discover my experiences and the milestones I've achieved along the way</p>
-                </div>
-
-                <div id="experience-list" class="row g-4">
-                    <!-- Experience items will be injected here -->
-                </div>
-            </div>
+<section class="experience-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-primary fw-bold">Professional Journey</h2>
+            <p class="text-muted">Discover my experiences and the milestones I've achieved along the way</p>
+        </div>
+        <div id="experience-list" class="row">
+            <!-- Experience items will be injected here -->
         </div>
     </div>
 </section>
 
+
 <style>
-    .experience-item {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        border-radius: 15px;
-        overflow: hidden;
+    .experience-section {
+        padding: 60px 0;
     }
 
-    .experience-item:hover {
-        transform: translateY(-10px) scale(1.02);
+    .experience-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    .experience-card:hover {
+        transform: translateY(-10px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .experience-item h5 {
-        color: #1e73be;
-        font-size: 1.25rem;
+    .experience-card img {
+        width: 100%;
+        height: 80px;
+        margin: 5%;
+        object-fit: contain;
     }
 
-    .experience-item img {
-        width: 90px;
-        height: 90px;
-        border-radius: 0;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    .experience-card-body {
+        padding: 20px;
+    }
+
+    .experience-card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #1e73be;
+    }
+
+    .experience-card-subtitle {
+        font-size: 1rem;
+        color: #495057;
+        margin-bottom: 10px;
     }
 
     .experience-duration {
-        font-weight: 600;
-        color: #495057;
+        font-weight: bold;
+        color: #6c757d;
+        margin-bottom: 10px;
     }
 
     .experience-details {
@@ -53,18 +64,10 @@
         line-height: 1.6;
     }
 
-    .card-body {
-        padding: 1.5rem;
-        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        border-radius: 10px;
-    }
-
-    .card {
-        border: none;
-    }
-
-    .img-square {
-        border-radius: 0;
+    @media (max-width: 576px) {
+        .experience-card img {
+            height: 150px;
+        }
     }
 </style>
 
@@ -75,7 +78,7 @@
 
     async function getExpList() {
         try {
-            const URL = "/experiencesData";
+            const URL = "/experiencesData"; // Update this URL to your actual data endpoint
             const response = await axios.get(URL);
 
             response.data.forEach(item => {
@@ -89,29 +92,23 @@
     }
 
     function createExperienceItem(item) {
-        const container = document.createElement('div');
-        container.className = 'experience-item col-12 col-md-6 col-lg-4';
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4 mb-4';
 
-        container.innerHTML = `
-            <div class="card shadow-sm h-100">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="me-3">
-                            <a href="${item.company_website}" target="_blank">
-                                <img src="${item.company_image}" alt="${item.company_name} logo" class="img-thumbnail img-square">
-                            </a>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">${item.title}</h5>
-                            <p class="text-muted mb-0">${item.designation}</p>
-                        </div>
-                    </div>
-                    <p class="experience-duration mb-2">${item.duration}</p>
-                    <p class="experience-details mb-0">${item.details}</p>
+        col.innerHTML = `
+            <div class="card experience-card h-100">
+                <a href="${item.company_website}" target="_blank">
+                    <img src="${item.company_image}" alt="${item.company_name} logo">
+                </a>
+                <div class="card-body experience-card-body">
+                    <h5 class="experience-card-title">${item.title}</h5>
+                    <h6 class="experience-card-subtitle">${item.designation} at ${item.company_name}</h6>
+                    <p class="experience-duration">${item.duration}</p>
+                    <p class="experience-details">${item.details}</p>
                 </div>
             </div>
         `;
 
-        return container;
+        return col;
     }
 </script>

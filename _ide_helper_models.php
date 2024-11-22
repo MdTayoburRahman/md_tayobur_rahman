@@ -82,35 +82,9 @@ namespace App\Models{
 /**
  * 
  *
- * @property int $id
- * @property string $title
- * @property string $sub_title
- * @property string $body
- * @property string|null $thumbnail
- * @property int $likes
- * @property string $slug
- * @property string|null $meta_title
- * @property string|null $meta_description
- * @property string|null $meta_keywords
- * @property string|null $image_alt_text
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog query()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereBody($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereImageAltText($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereLikes($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereMetaDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereMetaKeywords($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereMetaTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereSubTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereThumbnail($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Blog whereUpdatedAt($value)
  */
 	class Blog extends \Eloquent {}
 }

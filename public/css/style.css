@@ -8,23 +8,32 @@ html {
 
 /* Define a class for the responsive logo */
 .sitelogo {
-    max-width: 100%; /* Ensures the image doesn't exceed its container width */
-    height: auto; /* Maintains the aspect ratio */
+    max-width: auto; /* Ensures the image doesn't exceed its container width */
+    height: 60%; /* Maintains the aspect ratio */
 }
 
 /* Optional: You can set a maximum height if needed */
 @media (max-width: 768px) {
     .sitelogo {
-        height: 30px; /* Adjust as needed for smaller screens */
+        height: 20px; /* Adjust as needed for smaller screens */
+        width: auto;
     }
 }
 
 @media (min-width: 769px) {
     .sitelogo {
-        height: 40px; /* Default height for larger screens */
+        height: 30px; /* Default height for larger screens */
+        width: auto;
     }
 }
 /* site logo end */
+
+@media (max-width: 576px) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
 
 /* button for hero section start */
 .bn9 {
@@ -400,5 +409,3 @@ body {
     z-index: 1;
 }
 /*style for all page header end */
-
-

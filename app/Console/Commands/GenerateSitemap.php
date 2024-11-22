@@ -33,21 +33,35 @@ class GenerateSitemap extends Command
 
     public function handle()
     {
+        // Clear and re-cache configuration
+        $this->call('config:clear');
+        config(['app.url' => env('APP_URL', 'https://mdtayoburrahman.com')]);
         // Get the site URL from environment or config
-        $siteUrl = 'https://mdtayoburrahman.com';  // Default to localhost if not defined in .env
-
+        $siteUrl = config('app.url', 'https://mdtayoburrahman.com');
+        // If the config or environment is not properly set, explicitly assign here as fallback
+        if ($siteUrl === 'http://localhost') {
+            $siteUrl = 'https://mdtayoburrahman.com';
+        }
         // Create a new sitemap
         $sitemap = Sitemap::create();
 
-        // Add URLs to the sitemap
-        $sitemap
-            ->add(Url::create($siteUrl . '/'))
-            ->add(Url::create($siteUrl . '/contact'))
-            ->add(Url::create($siteUrl . '/projects'))
-            ->add(Url::create($siteUrl . '/resume'))
-            ->add(Url::create($siteUrl . '/service'))
-            ->add(Url::create($siteUrl . '/blog'))
-            ->add(Url::create($siteUrl . '/about'));
+        // Add static URLs to the sitemap
+        $staticUrls = [
+            '/',
+            '/contact',
+            '/projects',
+            '/resume',
+            '/service',
+            '/blog',
+            '/about',
+            '/web-development',
+            '/android-app-development',
+            '/business-management-software',
+        ];
+
+        foreach ($staticUrls as $staticUrl) {
+            $sitemap->add(Url::create($siteUrl . $staticUrl));
+        }
 
         // Add dynamic URLs for blog posts
         foreach (BlogPost::all() as $post) {

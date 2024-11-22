@@ -26,7 +26,7 @@
                     document.getElementById('certifications-list').innerHTML += `
                     <div class="col d-flex align-items-stretch">
                         <div class="card shadow-sm border-0">
-                            <img src="${item['media_url']}" alt="Media Thumbnail" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <img src="${item['media_url']}" alt="Media Thumbnail" class="card-img-top p-1" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">${item['title']}</h5>
                                 <p class="card-text text-muted">Institute: ${item['organization']}</p>

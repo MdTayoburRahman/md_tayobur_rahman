@@ -1,5 +1,4 @@
 <!-- Hero Section -->
-<!-- Hero Section -->
 <header class="hero-section py-5 position-relative">
     <div class="container px-5 pb-5">
         <div class="row gx-5 align-items-center">
@@ -7,6 +6,8 @@
                 <div class="d-flex justify-content-center">
                     <img class="profile-img" id="profileImg" src="{{ asset('assets/profile.png') }}" alt="Profile Image" />
                 </div>
+
+
             </div>
             <div class="col-xxl-6 order-2 order-xxl-2">
                 <div class="text-center text-xxl-start">

@@ -9,6 +9,7 @@
 
     <title>{{ $seo->title }}</title>
     <meta name="google-site-verification" content="EpT2NHy1CLHBQexIJPh6TtnH-QtZWvI7LljDrQmWs84" />
+    <meta name="yandex-verification" content="e9d509753d39b36a" />
     <meta name="description" content="{{ $seo->description }}" />
     <meta name="keywords" content="{{ $seo->keywords }}" />
     <meta property="og:site_name" content="{{ $seo->ogSiteName }}" />

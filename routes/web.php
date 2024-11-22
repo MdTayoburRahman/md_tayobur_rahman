@@ -1,19 +1,22 @@
 <?php
 
-use App\Http\Controllers\Admin\BlogPostController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\AdminAuthController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\BlogsController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\ResumeController;
-use App\Http\Controllers\ServicePageController;
-use App\Http\Middleware\AdminMiddleware;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
+use App\Http\Middleware\AdminMiddleware;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\AndroidDevController;
+use App\Http\Controllers\ServicePageController;
+use App\Http\Controllers\Admin\BlogPostController;
+use App\Http\Controllers\WebDevelopmentController;
+use App\Http\Controllers\BusinessSoftDevController;
 
 Route::get('/cache', function () {
     Artisan::call('cache:clear');
@@ -38,6 +41,9 @@ Route::get('/resume', [ResumeController::class, 'page']);
 Route::get('/service', [ServicePageController::class, 'page']);
 Route::get('/about', [AboutController::class, 'page']);
 Route::get('/blog', [BlogsController::class, 'page']);
+Route::get('/web-development', [WebDevelopmentController::class, 'page']);
+Route::get('/android-app-development', [AndroidDevController::class, 'page']);
+Route::get('/business-management-software', [BusinessSoftDevController::class, 'page']);
 
 // Ajax Call Routes
 Route::get('/heroData', [HomeController::class, 'heroData']);
